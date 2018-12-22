@@ -37,15 +37,15 @@
             <android.support.design.widget.TabItem
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/tab_name_fragment1"/>
+                android:text="@string/All"/>
             <android.support.design.widget.TabItem
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/tab_name_fragment2"/>
+                android:text="@string/Done"/>
             <android.support.design.widget.TabItem
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/tab_name_fragment3"/>
+                android:text="@string/UnDone"/>
         </android.support.design.widget.TabLayout>
     </android.support.v4.view.ViewPager>
 
