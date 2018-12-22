@@ -13,7 +13,10 @@ public class TaskLab {
     private static final TaskLab instance =new TaskLab();
 
 
-    private List<Task> mTasks=new ArrayList<>();
+    private List<Task> mAllTasks=new ArrayList<>();
+    private List<Task> mDoneTasks=new ArrayList<>();
+    private List<Task>mUnDonetasks=new ArrayList<>();
+
 
     public static TaskLab getInstance() {
         return instance;
@@ -21,12 +24,46 @@ public class TaskLab {
 
     public void addTask(Task task)
     {
-        mTasks.add(task);
+        //Add task with every Type mAllTasks List
+        mAllTasks.add(task);
+
+
+
+       //Add task according to the Type in their List
+        switch (task.getType())
+        {
+            case DONE:
+                mDoneTasks.add(task);
+                break;
+            case UNDONE:
+                mUnDonetasks.add(task);
+                break;
+        }
     }
 
-    public List<Task> getTaskList()
+    public List<Task> getTaskList(Task.TaskType type) throws IllegalArgumentException
     {
-        return mTasks;
+
+        switch (type)
+        {
+            case ALL:
+                return mAllTasks;
+            case DONE:
+                return mDoneTasks;
+            case UNDONE:
+                return mUnDonetasks;
+
+            default:
+                    throw new IllegalArgumentException("The Type is Type.All, Type.DONE and Type.UNDONE");
+
+        }
+
     }
+
+
+
+
+
+
 }
 
