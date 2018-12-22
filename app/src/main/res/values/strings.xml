@@ -1,10 +1,12 @@
 <resources>
     <string name="app_name">software_1</string>
     <string name="title_activity_task_manager2">TaskManagerActivity</string>
-    <string name="tab_name_fragment1">All</string>
-    <string name="tab_name_fragment2">Done</string>
-    <string name="tab_name_fragment3">UNDONE</string>
+    <string name="All">All</string>
+    <string name="Done">Done</string>
+    <string name="UnDone">UNDONE</string>
 
+    <string name="Untilted_firstLetter">U</string>
+    <string name="Untilted">Untitled</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

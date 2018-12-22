@@ -2,18 +2,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorAccent"
     tools:context="com.example.admin.software_1.controllers.TaskListFragment">
 
 
     <android.support.v7.widget.RecyclerView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
         android:id="@+id/taskList_recy_fragment"
-        android:padding="8dp"/>
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:padding="8dp" />
 
-
-
-
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
 
 
 </FrameLayout>
